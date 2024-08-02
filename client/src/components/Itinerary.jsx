@@ -2,6 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import ActivityListItem from './ActivityListItem.jsx';
 
+// const { GoogleGenerativeAI } = require("@google/generative-ai");
+// const genAI = new GoogleGenreativeAI(process.env.AIzaSyAUgJ5puTH4j7ZUMdocQmZ0j-g0auH6RoQ)
 
 
 function Itinerary() {
@@ -100,6 +102,8 @@ function Itinerary() {
       setEndTime('');
       setDescription('');
 
+      // here
+      //here
     }
     const handleActivityChange = (e) => {
       setActivity(e.target.value);
@@ -116,8 +120,8 @@ function Itinerary() {
 
   return (
     <div>
-        <div className='Box'>Itinerary</div>
-        <form onSubmit={handleClicked}>
+        <div className='box'>Itinerary</div>
+        <form onSubmit={handleClicked} className='form'>
           <input type='text' placeholder='Activity' value={activity} onChange={handleActivityChange} required></input>
           <input type='text' placeholder='Start Time' value={startTime} onChange={handleStartTimeChange}></input>
           <input type='text' placeholder='End Time' value={endTime} onChange={handleEndTimeChange}></input>

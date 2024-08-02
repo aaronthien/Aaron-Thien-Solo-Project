@@ -14,7 +14,7 @@ function ActivityListItem({activity, startTime, endTime, description, _id, handl
             <li>End Time: {endTime}</li>
             <li>Description: {description}</li>
             <li>ID: {_id} </li>
-            <button onClick={ () => handleDeleteButton(_id)}>Delete Activity</button>
+            <button onClick={ () => {handleDeleteButton(_id); alert('Deleted Activity')}}>Delete Activity</button>
         </ul>
     </div>
   )

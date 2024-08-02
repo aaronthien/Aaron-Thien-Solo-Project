@@ -2,8 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import ActivityListItem from './ActivityListItem.jsx';
 
-// const { GoogleGenerativeAI } = require("@google/generative-ai");
-// const genAI = new GoogleGenreativeAI(process.env.AIzaSyAUgJ5puTH4j7ZUMdocQmZ0j-g0auH6RoQ)
+
 
 
 function Itinerary() {
